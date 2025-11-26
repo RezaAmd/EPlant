@@ -2,7 +2,7 @@
 
 namespace Domain.Entities.Catalogs;
 
-public sealed class PlantSpeciesEntity : BaseEntity
+public sealed class PlantSpecyEntity : BaseEntity
 {
     public Guid Id { get; set; }
     public string Name { get; private set; } = string.Empty;
@@ -14,9 +14,9 @@ public sealed class PlantSpeciesEntity : BaseEntity
     #endregion
 
     #region Methods
-    public static PlantSpeciesEntity Create(string name, string? ScientificName, string? description)
+    public static PlantSpecyEntity Create(string name, string? ScientificName, string? description)
     {
-        var category = new PlantSpeciesEntity()
+        var category = new PlantSpecyEntity()
         {
             Name = name,
             ScientificName = ScientificName,

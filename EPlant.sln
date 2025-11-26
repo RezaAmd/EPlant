@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.3.11222.16 d18.3
+VisualStudioVersion = 18.3.11222.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{5EB32C49-CB98-477D-88F6-D4010234CBD2}"
 EndProject
@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentations", "Presentati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Libraries\Domain\Domain.csproj", "{4AACD481-5B8B-41F6-91E9-72CCBD6EA305}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\Libraries\Application\Application.csproj", "{2F745042-8BED-446E-9BFA-31EE86731B12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{4AACD481-5B8B-41F6-91E9-72CCBD6EA305}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AACD481-5B8B-41F6-91E9-72CCBD6EA305}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AACD481-5B8B-41F6-91E9-72CCBD6EA305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F745042-8BED-446E-9BFA-31EE86731B12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F745042-8BED-446E-9BFA-31EE86731B12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F745042-8BED-446E-9BFA-31EE86731B12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F745042-8BED-446E-9BFA-31EE86731B12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -33,5 +39,9 @@ Global
 		{10862738-C855-4D28-B275-489489E28255} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{9B1C6FC4-3F00-4F20-BAD0-95F001594493} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{4AACD481-5B8B-41F6-91E9-72CCBD6EA305} = {10862738-C855-4D28-B275-489489E28255}
+		{2F745042-8BED-446E-9BFA-31EE86731B12} = {10862738-C855-4D28-B275-489489E28255}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83DE8BF9-FA51-48E2-8DF3-2126BE5E13AA}
 	EndGlobalSection
 EndGlobal

@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities.Catalogs;
+﻿namespace Domain.Entities.Recipes;
 
 public class StageDefinition : BaseEntity
 {
