@@ -1,12 +1,14 @@
 ﻿namespace Domain.Enums;
 
-public enum ActionType
+public enum PlantActivityTypeEnum
 {
     Watering,
     Fertilizing,
     Pruning,
     Repotting,
     SoilChange,
+    TemperatureReading,
+    HumidityReading,
     Note,
-    ManualEvent
+    Custom
 }

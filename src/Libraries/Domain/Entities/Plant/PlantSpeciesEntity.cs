@@ -1,10 +1,13 @@
 ﻿using Domain.Entities.Users;
 
-namespace Domain.Entities.Catalogs;
+namespace Domain.Entities.Plants;
 
-public sealed class PlantSpecyEntity : BaseEntity
+/// <summary>
+/// plant species; Name, scientific name, suitable reproduction interval
+/// </summary>
+public class PlantSpeciesEntity
 {
-    public Guid Id { get; set; }
+    public Guid Id { get; init; } = Guid.NewGuid();
     public string Name { get; private set; } = string.Empty;
     public string? ScientificName { get; set; }
     public string? Description { get; set; }
@@ -14,16 +17,16 @@ public sealed class PlantSpecyEntity : BaseEntity
     #endregion
 
     #region Methods
-    public static PlantSpecyEntity Create(string name, string? ScientificName, string? description)
+    public static PlantSpeciesEntity Create(string name, string? description)
     {
-        var category = new PlantSpecyEntity()
+        var plant = new PlantSpeciesEntity()
         {
             Name = name,
-            ScientificName = ScientificName,
             Description = description
         };
 
-        return category;
+        return plant;
     }
     #endregion
+
 }

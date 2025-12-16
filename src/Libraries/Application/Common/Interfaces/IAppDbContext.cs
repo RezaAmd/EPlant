@@ -1,4 +1,6 @@
-﻿using Domain.Entities.Catalogs;
+﻿using Domain.Entities.Plants;
+using Domain.Entities.UserPlant;
+using Domain.Entities.Users;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
@@ -8,8 +10,14 @@ namespace Application.Common.Interfaces;
 public interface IAppDbContext
 {
     #region Tables
-    DbSet<PlantSpecyEntity> PlantSpecies { get; }
-    DbSet<PlantEntity> Plants { get; }
+    // Plant
+    DbSet<PlantSpeciesEntity> PlantSpecies { get; }
+
+    // User
+    DbSet<UserPlantEntity> UserPlants { get; }
+    DbSet<UserSowingActionEntity> UserSowingActions { get; }
+    DbSet<PlantActivityEventEntity> plantActivityEvents { get; }
+    DbSet<PlantNoteEntity> PlantNotes { get; }
     #endregion
 
     ChangeTracker ChangeTracker { get; }
